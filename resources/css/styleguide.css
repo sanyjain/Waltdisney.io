@@ -1,0 +1,388 @@
+body{
+	background:#FFF;
+	}
+	
+.clear{
+	clear:both;
+	}
+	
+	
+/*--GLOBAL USE for Button and Input Box Style-- */
+
+.myButton {
+	height:24px;
+	-moz-box-shadow:inset 0px 1px 7px 0px #eaf3f7;
+	-webkit-box-shadow:inset 0px 1px 7px 0px #eaf3f7;
+	box-shadow:inset 0px 1px 7px 0px #eaf3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bad3e2), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #bad3e2 5%, #deebf2 100%);
+	background:-webkit-linear-gradient(top, #bad3e2 5%, #deebf2 100%);
+	background:-o-linear-gradient(top, #bad3e2 5%, #deebf2 100%);
+	background:-ms-linear-gradient(top, #bad3e2 5%, #deebf2 100%);
+	background:linear-gradient(to bottom, #bad3e2 5%, #deebf2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bad3e2', endColorstr='#deebf2',GradientType=0);
+	background-color:#fff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #b8b8c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#215660;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:0px 2px 2px 2px;
+	margin:0px 5px 0px 2px;
+	text-decoration:none;
+    -webkit-box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #f0f8fc));
+	background:-moz-linear-gradient(top, #d8e9f3 5%, #f0f8fc 100%);
+	background:-webkit-linear-gradient(top, #d8e9f3 5%, #f0f8fc 100%);
+	background:-o-linear-gradient(top, #d8e9f3 5%, #f0f8fc 100%);
+	background:-ms-linear-gradient(top, #d8e9f3 5%, #f0f8fc 100%);
+	background:linear-gradient(to bottom, #d8e9f3 5%, #f0f8fc 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8e9f3', endColorstr='#f0f8fc',GradientType=0);
+	background-color:#c1d7e2;
+	color:#6396a0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+input[type="text"], input[type="password"] {
+	height:13px;
+	border:1px solid #b8b8c0;
+	font-size:11px;
+	color:#666;
+	vertical-align:middle;
+	padding:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+}
+
+select{   
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:1px solid #b8b8c0;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	}
+
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label {position:relative}
+
+label:after {
+    content:'>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+*/
+	
+#wrapper{
+	width:1020px;
+	height:900px;
+	margin:0px auto;
+}
+
+
+#container{
+	width:1020px;
+	height:578px;
+	background:url(../images/WDW_HPMP_Billboard_USDom_Girl_Merida_Preschool3.jpg);
+	background-repeat:no-repeat;	
+	margin:0px auto;
+}
+
+#header-area{
+	width:100%;
+	height:70px;
+	background:url(../images/header-bg.jpg);
+	background-repeat:repeat-x;
+	margin:0px auto;
+}
+
+#header-content-area{
+	width:900px;
+	height:67px;
+	margin:0px auto;
+}
+
+		#showdisney{
+			width:110px;
+			height:22px;
+			margin:5px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:10px;
+			float:left;
+		}
+		
+		
+		#showdisney a{
+			color:#69c;
+			text-decoration:none;
+		}
+		
+		#showdisney a:hover{
+			color:#ccc;
+			text-decoration:none;
+		}
+		
+		
+		#sign-in{
+			width:180px;
+			height:22px;
+			margin:5px 10px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:10px;
+			float:right;
+			text-align:right;
+		}
+		
+		#sign-in a{
+			color:#09c;
+			text-decoration:none;
+		}
+		
+		
+		#sign-in a:hover{
+			color:#6cf;
+			text-decoration:none;
+		}
+		
+		
+		#search-field{
+			width:140px;
+			height:24px;
+			float:right;
+			margin:0px 10px;
+		}
+		
+		#nav-area{
+			width:900px;
+			margin:0px;
+			text-align:center;
+		}
+		
+		
+		#checkin-area{
+			width:980px;
+			height:60px;
+			margin:0px auto;
+			border:#c8c8c8 1px solid;
+			border-top:none;
+			border-radius:0px 0px 10px 10px;
+			-webkit-border-radius:0px 0px 10px 10px;
+			-moz-border-radius:0px 0px 10px 10px;	
+		}
+		
+			.price-in-text{
+				width:80px;
+				margin:12px 10px 5px 15px;
+				float:left;
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:14px;
+				color:#203850;
+				opacity:1;
+			}
+		
+			.input-area{
+				width:120px;
+				height:50px;
+				margin:5px;
+				float:left;
+			}
+			
+					.input-label{
+						width:120px;
+						font-family:Arial, Helvetica, sans-serif;
+						font-size:10px;
+						font-weight:bold;
+						color:#203850;
+						float:left;				
+					}
+					
+					.input-box{
+						width:120px;
+						float:left;	
+						margin:5px 0px;
+					}
+					
+					
+					
+/* Lodge Page */	
+
+#main-content{
+	width:940px;
+	margin:0px auto;
+}
+
+	#breadcrumb-area{
+		width:440px;
+		height:50px;
+		margin:0px 0px 0px 15px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:11px;
+		color:#06C
+	}
+	
+		#breadcrumb{
+			width:440px;
+			height:30px;
+			margin:0px 0px 0px 15px;
+			padding-top:20px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:11px;			
+		}
+		
+		#breadcrumb a{
+			color:#203850;
+			text-decoration:none;			
+		}
+		
+		
+		#breadcrumb a:hover{
+			color:#527495;
+			text-decoration:none;			
+		}
+		
+		#white-placer{
+			width:940px;
+			height:630px;
+			background:#FFF;
+			border-radius:8px;
+			-webkit-border-radius:8px;
+			-moz-border-radius:8px;
+		}
+		
+		#lodge-display{
+			width:600px;
+			height:35px;
+			margin:5px 15px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:30px;
+			padding-top:15px;
+			color:#203850;
+			font-weight:lighter;
+			font-weight:normal;
+			float:left;
+		}
+		
+		#viewresorts{
+			width:180px;
+			height:25px;
+			margin:5px 20px;
+			padding-top:25px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:14px;
+			float:right;
+			text-align:right;
+		}
+		
+		#viewresorts a{
+			color:#1890d8;
+			text-decoration:none;
+		}
+		
+		#viewresorts a:hover{
+			color:#96d2f6;
+			text-decoration:none;
+		}
+		
+		
+		#tab-structure{
+			width:940px;
+			height:240px;
+			background:url(../images/tab-structure.jpg);
+			margin:5px 0px;
+		}
+		
+		#change-area{
+			width:900px;
+			height:55px;
+			background:#1890d0;
+			margin:10px 20px;
+			border-radius:5px;
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:16px;
+			color:#fff;
+		}
+		
+				.display-lodge-list{
+					width:600px;
+					margin:18px 8px;
+					float:left;
+				}
+		
+				.btn-change{
+					width:104px;
+					height:30px;
+					float:right;
+					margin:12px 40px 10px;
+				}
+				
+				
+				
+		#offers-display{
+			width:940px;
+			float:left;
+			margin:10px 0px;
+		}
+		
+		#room-package{
+			width:940px;
+			margin:10px 0px;
+			float:left;
+		}
+				
+				
+			
+		
+		
