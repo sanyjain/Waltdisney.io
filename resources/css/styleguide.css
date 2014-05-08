@@ -5,7 +5,23 @@ body{
 .clear{
 	clear:both;
 	}
-	
+
+.btn-style{
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    height:23px;
+    width: 100px;
+background: #bfd255; /* Old browsers */
+background: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* IE10+ */
+background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+}	
 	
 /*--GLOBAL USE for Button and Input Box Style-- */
 
@@ -94,6 +110,7 @@ select{
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     select {padding-right:18px}
 }
+
 
 label {position:relative}
 
@@ -356,10 +373,64 @@ label:before {
 		}
 		
 				.display-lodge-list{
-					width:600px;
-					margin:18px 8px;
+					width:700px;
+					height:30px;
+					margin:12px 8px;
 					float:left;
 				}
+				
+				
+						.date-icon{
+							width:20px;
+							height:21px;
+							background:url(../images/lodge_calendar.jpg);
+							float:left;
+							margin:4px 5px 4px 0px;
+							vertical-align:middle;							
+						}
+						
+						.display-date{
+							width:170px;
+							height:21px;
+							float:left;							
+							margin:4px 5px 4px 0px;
+							vertical-align:middle;
+						}
+						
+						
+						.ppl-icon{
+							width:20px;
+							height:22px;
+							background:url(../images/ppl.jpg);
+							float:left;
+							margin:3px 5px 4px 0px;
+							vertical-align:middle;							
+						}
+						
+						.display-person{
+							width:190px;
+							height:21px;
+							float:left;							
+							margin:4px 5px 4px 0px;
+							vertical-align:middle;
+						}
+						
+						.villa-icon{
+							width:20px;
+							height:26px;
+							background:url(../images/villas.jpg);
+							float:left;
+							margin:1px 5px 0px 0px;
+							vertical-align:middle;							
+						}
+						
+						.display-villa{
+							width:240px;
+							height:21px;
+							float:left;							
+							margin:2px 5px 4px 0px;
+							vertical-align:text-top;
+						}
 		
 				.btn-change{
 					width:104px;
@@ -382,7 +453,102 @@ label:before {
 			float:left;
 		}
 				
-				
+		
+		.calendar {
+				font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+				font-size: 0.9em;
+				background-color: #EEE;
+				color: #333;
+				border: 1px solid #DDD;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				padding: 0.2em;
+				width: 14em;
+			}
 			
+			.calendar .months {
+				background-color: #009966;
+				border: 1px solid #E78F08;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				color: #FFF;
+				padding: 0.2em;
+				text-align: center;
+			}
+			
+			.calendar .prev-month,
+			.calendar .next-month {
+				padding: 0;
+			}
+			
+			.calendar .prev-month {
+				float: left;
+			}
+			
+			.calendar .next-month {
+				float: right;
+			}
+			
+			.calendar .current-month {
+				margin: 0 auto;
+			}
+			
+			.calendar .months .prev-month,
+			.calendar .months .next-month {
+				color: #FFF;
+				text-decoration: none;
+				padding: 0 0.4em;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+			.calendar .months .prev-month:hover,
+			.calendar .months .next-month:hover {
+				background-color: #FDF5CE;
+				color: #C77405;
+			}
+			
+			.calendar table {
+				border-collapse: collapse;
+				padding: 0;
+				font-size: 0.8em;
+				width: 100%;
+			}
+			
+			.calendar th {
+				text-align: center;
+			}
+			
+			.calendar td {
+				text-align: right;
+				padding: 1px;
+				width: 14.3%;
+			}
+			
+			.calendar td span {
+				display: block;
+				color: #1C94C4;
+				background-color: #F6F6F6;
+				border: 1px solid #CCC;
+				text-decoration: none;
+				padding: 0.2em;
+				cursor: pointer;
+			}
+			
+			.calendar td span:hover {
+				color: #C77405;
+				background-color: #FDF5CE;
+				border: 1px solid #FBCB09;
+			}
+			
+			.calendar td.today span {
+				background-color: #FFF0A5;
+				border: 1px solid #FED22F;
+				color: #363636;
+			}	
 		
 		

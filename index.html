@@ -3,16 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Walt Disney World Resort in Orlando, Florida</title>
-<style type="text/css">
-</style>
 <link href="resources/css/styleguide.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="datepickr.js"></script>
 </head>
-
 <body>
 <div id="header-area">
                 <div id="header-content-area">    
-                    <div id="showdisney"><a href="#">Show Disney.com</a>&nbsp;&nbsp;<a href="#"><img src="resources/images/dn-arrow.jpg" width="7" height="7" border="0" /></a></div>
-                    
+                    <div id="showdisney"><a href="http://www.disney.com/">Show Disney.com</a>&nbsp;&nbsp;<a href="http://www.disney.com/"><img src="resources/images/dn-arrow.jpg" width="7" height="7" border="0" /></a></div>
                     <div id="search-field"><img src="resources/images/search.jpg" width="148" height="24" /></div>
                     
                     <div id="sign-in"><a href=#>Sign In or Create Account</a></div> 
@@ -23,75 +20,64 @@
                 </div>
             </div>
             <div class="clear"></div>
-<div id="container">    
+<div id="container">  
+ <form id="form1" name="checkin" method="get" action="lodge.html">   
  <div id="checkin-area" style="background:#e0e8f0; opacity:0.8;">
  <div class="price-in-text">Price your Vacation</div>
             
           <div class="input-area">
-            	<div class="input-label">Check In</div><div class="input-box">
-            	  <form id="form1" name="checkin" method="post" action=""> 
-                      <input name="date" type="text" id="date" value="" size="15" />
-                  </form>
+            	<div class="input-label">Check In</div><div class="input-box">           	            	  
+                      <input name="CheckInDate" type="text" id="datepick1" size="15" value="" />               
             	</div>
             </div>
         
         
         <div class="input-area">
-            	<div class="input-label">Check Out</div><div class="input-box">
-            	  <form id="form2" name="checkout" method="post" action=""> 
-                      <input name="date2" type="text" id="date" value="" size="15" />
-                  </form>
+            	<div class="input-label">Check Out</div><div class="input-box">           	 
+                      <input name="CheckOutDate" type="text" id="datepick2" value="" size="15" />                
             	</div>
         </div>
         
         
          <div class="input-area" style="width:65px">
-            	<div class="input-label" style="width:65px">Adults (18+)</div><div class="input-box" style="width:65px">
-            	  <form id="form3" name="adults" method="post" action="">
+            	<div class="input-label" style="width:65px">Adults (18+)</div><div class="input-box" style="width:65px">            	 
             	    <label for="select"></label>
-            	    <select name="select" size="1" id="select" style="width:60px">
+            	    <select name="Adult" size="1" id="select" style="width:60px">
             	      <option>0</option>
             	      <option>1</option>
             	      <option>2</option>
-          	        </select>
-                  </form>
+          	        </select>            
             	</div>
         </div>
         
         
         <div class="input-area" style="width:65px">
-            	<div class="input-label" style="width:65px">Children</div><div class="input-box" style="width:65px">
-            	  <form id="form4" name="children" method="post" action="">
+            	<div class="input-label" style="width:65px">Children</div><div class="input-box" style="width:65px">            	 
             	    <label for="select"></label>
-            	    <select name="select" size="1" id="select" style="width:60px">
+            	    <select name="Children" size="1" id="select1" style="width:60px">
             	      <option>0</option>
             	      <option>1</option>
             	      <option>2</option>
-          	        </select>
-                  </form>
+          	        </select>                 
             	</div>
         </div>
         
         
        <div class="input-area" style="width:165px">
             	<div class="input-label" style="width:165px">Resort Hotel</div><div class="input-box" style="width:165px">
-            	  <form id="form5" name="children" method="post" action="">
             	    <label for="select"></label>
-            	    <select name="select" size="1" id="select" style="width:160px">
+            	    <select name="Resort" size="1" id="select2" style="width:160px">
             	      <option>All Resort Hotels</option>
-            	      <option>Hotel Name 1</option>
-            	      <option>Hotel Name 2</option>
+            	      <option>Disney Beach Club Villas</option>
+            	      <option>The Villas at Disney Wilderness Lodge</option>
           	        </select>
-                  </form>
             	</div>
         </div>
         
         
         <div class="input-area" style="width:25px">
             	<div class="input-box" style="margin-top:16px; width:20px">
-            	  <form id="form6" name="checkin" method="post" action=""> 
                       <input name="" type="checkbox" value="" />
-                  </form>
             	</div>
         </div>
         
@@ -102,10 +88,20 @@
         </div>
         
         <div class="input-area" style="width:110px; height:22px; margin-top:20px">
-            	<a href="lodge.html"><img src="resources/images/btn_fp.png" width="102" height="19" border=0 /></a>       
+	<input type="submit" value="Find Process" class="btn-style">	            	
         </div>
         
-</div>      
 </div>
+</form>     
+</div>
+<script type="text/javascript">
+			
+			new datepickr('datepick1', {
+				'dateFormat': 'm/d/y'
+			});
+			new datepickr('datepick2', {
+				'dateFormat': 'm/d/y'
+			});
+		</script>
 </body>
 </html>
