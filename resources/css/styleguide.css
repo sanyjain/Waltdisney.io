@@ -5,6 +5,17 @@ body{
 .clear{
 	clear:both;
 	}
+	
+#datepick1{
+	background: url("../images/calendar_icon.jpg") no-repeat scroll right center #fff;
+	height:18px;
+	}
+	
+#datepick2{
+	background: url("../images/calendar_icon.jpg") no-repeat scroll right center #fff;
+	height:18px;
+	}
+	
 
 .btn-style{
     border-radius: 8px;
@@ -103,6 +114,7 @@ select{
     cursor:pointer;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
+	height:22px;
 	}
 
 
@@ -468,8 +480,8 @@ label:before {
 			}
 			
 			.calendar .months {
-				background-color: #009966;
-				border: 1px solid #E78F08;
+				background-color: #8BCF54;
+				border: 1px solid #8BCF54;
 				-moz-border-radius: 4px;
 				-webkit-border-radius: 4px;
 				border-radius: 4px;
